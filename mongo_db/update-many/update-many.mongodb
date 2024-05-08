@@ -1,0 +1,17 @@
+use("sample_training") //aquí nos vamos a conectar a la bd sample training
+
+db.zips.updateMany(
+    //query
+    {city:"CLEVELAND"},
+    //update - operators
+    {
+
+        $inc:{
+            pop:1000
+        }
+    }
+)
+
+
+
+

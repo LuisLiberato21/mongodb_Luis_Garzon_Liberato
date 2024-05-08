@@ -1,0 +1,5 @@
+use("sample_training")
+
+db.zips.find({city:"CLEVELAND"})
+//línea de código 12: 2369
+//línea de código 25: 1244

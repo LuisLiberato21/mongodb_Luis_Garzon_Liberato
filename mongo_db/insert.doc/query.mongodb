@@ -1,0 +1,6 @@
+use ("sena_store")
+
+db.products.find()
+
+
+

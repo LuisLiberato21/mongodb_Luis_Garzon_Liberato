@@ -1,0 +1,15 @@
+use("sena_store")
+
+db.products.updateOne(
+    //primero va el query que es como yo identifico el documento que voy a actualizar
+    {_id:2},
+    //luego va el change o la actualización, sin embargo en este cambio
+    //debemos incluir los operators
+    {
+        $inc:{
+            price: 8000,
+        }
+    })
+//Corchetes con ALT + 91
+//Comillas simples con ALT + 39
+

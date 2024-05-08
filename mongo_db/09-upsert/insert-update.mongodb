@@ -1,0 +1,35 @@
+use("sena_store")
+
+// db.iot.insertOne({    
+//    sensor: "A001",
+//    date: "2022-01-03",
+//    reading: [1212]
+// })
+
+/*
+db.iot.updateOne({
+    sensor: "A001",
+    date: "2022-01-03",
+},{
+    $pop: {
+        reading: 1
+    }
+})
+*/
+
+db.iot.updateOne({
+    sensor: "A001",
+    date: "2022-01-03",
+},{
+    $push:{
+        reading:2323
+    }
+})
+
+
+
+
+
+
+
+
